@@ -3,6 +3,10 @@ CSS Reset * {
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root {
   --navbar-height: 59px;
@@ -10,7 +14,7 @@ CSS Reset * {
 #navbar {
   display: flex;
   align-items: center;
-  position: relative;
+  position: sticky;
   top:0px;
 }
 
@@ -70,9 +74,9 @@ CSS Reset * {
 #home {
   display: flex;
   flex-direction: column;
-  padding: 3px 200px;
-  /* margin-bottom: 200px; */
-  height: 578px;
+  /* padding: 3px 200px; */
+  margin-bottom: 250px;
+  height: 580px;
   justify-content: center;
   align-items: center;
 }
@@ -84,7 +88,7 @@ CSS Reset * {
   top:0px;
   left: 0px;
   width: 100%;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   z-index: -1;
   opacity: 0.89;
 }
@@ -128,8 +132,7 @@ CSS Reset * {
 
 /* Clients Section  */
 #client-section{
-  /* display: flex; */
-  height: 344px;
+  /* height: 344px; */
   position: relative;
 }
 #client-section::before{
@@ -137,7 +140,7 @@ CSS Reset * {
   position: absolute;
   background: url('../img/bg2.jpg') no-repeat center center/cover ;
   width: 99%;
-  height: 82%;
+  height: 100%;
   z-index: -1;
   opacity: 0.3px;
 }
@@ -209,11 +212,14 @@ footer{
 .h-primary {
   font-family: "Bree Serif", serif;
   font-size: 3.8rem;
-  padding: 12px;
+  /* padding: 12px; */
+  /* margin-bottom: 100px; */
+  /* margin-top: 10px; */
+  
 }
 
 h1 {
-  font-size: 3.8rem;
+  /* font-size: 3.8rem; */
 }
 
 .center {
